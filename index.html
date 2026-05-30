@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Petición de Hinchas</title>
+<meta charset="UTF-8">
+<style>
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:30px;
+}
+h1{
+color:gold;
+}
+button{
+padding:10px 20px;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Petición de Hinchas</h1>
+
+<p>¿Creés que Boca necesita un cambio de rumbo?</p>
+
+<h2>Apoyos: <span id="contador">0</span></h2>
+
+<button onclick="sumar()">Apoyar</button>
+
+<script>
+let contador = 0;
+
+function sumar(){
+contador++;
+document.getElementById("contador").innerText = contador;
+}
+</script>
+
+</body>
+</html>
